@@ -27,7 +27,7 @@ agent = initialize_agent(
     tools,
     llm,
     agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION, # 针对 Chat 模型优化
-    verbose=True,
+    verbose=True,  #  开启之后完整的 chain 执行过程。
     handle_parsing_errors=True # 加上这个以防止大模型输出格式微小错误导致程序崩溃
 )
 
